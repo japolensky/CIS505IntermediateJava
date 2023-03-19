@@ -15,12 +15,12 @@ package MODULE_1.HelloWorldApp;
 public class PolenskyHelloWorld {
 public static void main(String[] args) {
     myName("Jason", "Polensky");
-}
+} // the beginning of the code for the myname method
 public static void myName(String first, String last)
 // This method prints my first and last name
 /*I added colors to see if it would work prperly in the terminal */
 {
     System.out.println("\u001B[34m My name is \u001B[37m"+first+" \u001B[37;1m"+last+"\u001B[0m");
-}
+} // end of the myname method
 
 }
