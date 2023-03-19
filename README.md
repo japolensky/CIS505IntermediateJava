@@ -1,3 +1,3 @@
 # CIS505IntermediateJava March-June2023
 // This is the intermediate Java Course at Bellevue University - Nebraska, United States
-// Just testing commit from vs code
+// Just testing commit from vs code, it seems to work now
