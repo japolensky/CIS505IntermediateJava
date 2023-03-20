@@ -1,8 +1,14 @@
 /*
     Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
         Comprehensive Version (12th ed.). Pearson Education, Inc.
-    Modified by R. Krasso 2021
-    Additional modifications by Jason Polensky 19March2023
+
+    Additional modifications by Jason Polensky 19March2023 - From page 368-369
+    general idea of The Fan Class exercise
+    generic uml diagram can be found from author here:
+    https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/content/EvenNumberedExerciseUMLDiagram.pdf
+    author solution can be found here:
+    https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#solutions
+    my solution is below:
 */ 
 /*
     Krasso, R. (2021).  CIS 505 Intermediate Java Programming. Bellevue University, all rights reserved

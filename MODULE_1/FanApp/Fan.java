@@ -1,3 +1,15 @@
+/*
+    Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
+        Comprehensive Version (12th ed.). Pearson Education, Inc.
+    Additional modifications by Jason Polensky 19March2023
+     general idea of The Fan Class exercise
+    generic uml diagram can be found from author here:
+    https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/content/EvenNumberedExerciseUMLDiagram.pdf
+    author solution can be found here:
+    https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#solutions
+    my solution is below:   
+*/ 
+
 package MODULE_1.FanApp;
 
 public class Fan {

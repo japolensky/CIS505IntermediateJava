@@ -5,7 +5,12 @@
  * For the second argument constructor, use the classes constants to set the speed. 
  * Display the objects by invoking the classes toString() method.
  */
-
+/*
+    Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
+        Comprehensive Version (12th ed.). Pearson Education, Inc.
+    Modified by R. Krasso 2021
+    Additional modifications by Jason Polensky 19March2023
+*/ 
 package MODULE_1.FanApp;
 
 //package MODULE_1.FanApp;
