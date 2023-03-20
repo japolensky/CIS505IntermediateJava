@@ -1,12 +1,9 @@
-
-
-//public class TestFanApp {
+package MODULE_1.FanApp;
+import MODULE_1.FanApp.*;
+public class TestFanApp {
     public static void main(String[] args) {  //main method
 
 // Create two Fan objects
-        Fan fanone = new Fan();
-        Fan fantwo = new Fan();
-		
-
+        Fan fan1=new Fan();
     }
-//}
+}
