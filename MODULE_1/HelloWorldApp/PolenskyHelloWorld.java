@@ -18,7 +18,7 @@ public class PolenskyHelloWorld {
  */
 public static void main(String[] args) {
    try {
-    myName("Jason", "Polensky");
+    myName("Jason", "Polensky"); 
    } 
    catch (Exception e) { // I am attempting to get the points for error trapping.
     System.out.println("Incorrect Entry into myName() from main");
