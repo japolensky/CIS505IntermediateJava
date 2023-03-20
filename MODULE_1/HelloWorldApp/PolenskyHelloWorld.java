@@ -31,7 +31,8 @@ public static void myName(String first, String last)
 {
    try {
         System.out.println("\u001B[34m My name is \u001B[37m"+first+" \u001B[37;1m"+last+"\u001B[0m"); 
-    } catch (Exception e) {
+    } 
+    catch (Exception e) {
         System.out.println("Incorrect Entry into myName()");
     }
     
