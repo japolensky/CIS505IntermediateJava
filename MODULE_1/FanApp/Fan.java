@@ -7,7 +7,7 @@
     https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/content/EvenNumberedExerciseUMLDiagram.pdf
     author solution can be found here:
     https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#solutions
-    my solution is below:    
+    my solution is below:     
 */ 
 
 package MODULE_1.FanApp;
