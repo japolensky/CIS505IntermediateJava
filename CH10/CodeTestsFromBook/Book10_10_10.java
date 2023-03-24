@@ -1,5 +1,5 @@
-Package MODULE_2.CodeTestsFromBook;
-public class Test {
+package CH10.CodeTestsFromBook;
+public class Book10_10_10 {
     public static void main(String[] args) {
       System.out.println("Hi, ABC, good".matches("ABC "));
       System.out.println("Hi, ABC, good".matches(".*ABC.*"));

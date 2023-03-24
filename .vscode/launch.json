@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Book10_10_10",
+            "request": "launch",
+            "mainClass": "CH10.CodeTestsFromBook.Book10_10_10",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Show10_10_10",
+            "request": "launch",
+            "mainClass": "MODULE_2.CodeTestsFromBook.Show10_10_10",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
