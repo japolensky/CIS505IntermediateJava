@@ -1,4 +1,4 @@
-Package MODULE_2.Show10_10_10.Java
+Package MODULE_2.CodeTestsFromBook;
 public class Test {
     public static void main(String[] args) {
       System.out.println("Hi, ABC, good".matches("ABC "));
