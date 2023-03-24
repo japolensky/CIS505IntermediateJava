@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThisExample",
+            "request": "launch",
+            "mainClass": "Chapter_10.ThisExample",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "This_Example",
+            "request": "launch",
+            "mainClass": "Chapter_10.This_Example",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Localy",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.Localy",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "TestCircleWithPrivateDataFields",
+            "request": "launch",
+            "mainClass": "Chapter_9.TestCircleWithPrivateDataFields",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.Test",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Book10_10_8",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.Book10_10_8",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Book10_10_11",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.Book10_10_11",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Book10_10_10",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.Book10_10_10",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "Book10_10_10",
             "request": "launch",
             "mainClass": "CH10.CodeTestsFromBook.Book10_10_10",

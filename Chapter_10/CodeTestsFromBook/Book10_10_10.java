@@ -1,4 +1,4 @@
-package CH10.CodeTestsFromBook;
+package Chapter_10.CodeTestsFromBook;
 public class Book10_10_10 {
     public static void main(String[] args) {
       System.out.println("Hi, ABC, good".matches("ABC "));
