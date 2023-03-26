@@ -4,7 +4,7 @@
  * modified by jason Polensky
  */
 
-package Chapter_10;
+package Chapter_10.CodeTestsFromBook;
 
 public class ThisExample {
 

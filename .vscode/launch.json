@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestThis7",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.TestThis7",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "ThisExample",
+            "request": "launch",
+            "mainClass": "Chapter_10.CodeTestsFromBook.ThisExample",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "ThisExample",
             "request": "launch",
             "mainClass": "Chapter_10.ThisExample",
