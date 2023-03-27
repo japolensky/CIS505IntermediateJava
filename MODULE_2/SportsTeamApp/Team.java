@@ -18,12 +18,15 @@ public class Team {
     private String teamName="";     //SR 2.3.1 - A private string data field named teamName that specifies the teams name. The default is an empty string.
     private String[] players= new String[20];   //SR 2.3.2 - A private string array data field named players that specifies the players assigned to a team. The default size is 20.
     private int playerCount=0;      //SR 2.3.3 - A private int data field named playerCount that specifies the number of players on a team. The default is 0.
+    static int noOfObjects=0;       //initialize an object counter
+    {noOfObjects +=1;}              // increment an object counter for each instance
     Team(String nameofteam){        //SR 2.3.4 - An argument constructor that creates a team using the teamName data field as an argument.
 
     }
     public void addPlayer(String player){       //SR 2.3.5a - A public method named addPlayer with a string argument that adds a player to the players data field.
         players[playerCount] = player;
-        this.playerCount++;         //SR 2.3.5b - A public method named addPlayer with a string argument that adds a player to the players data field.
+        // System.out.println("players["+playerCount+"]="+players[playerCount]); //testing
+        ++this.playerCount;         //SR 2.3.5b - A public method named addPlayer with a string argument that adds a player to the players data field.
     }
     public String[] getPlayers(){   //SR 2.3.6 - A public string array method named getPlayers that returns the players data field.
         return players;
@@ -33,6 +36,12 @@ public class Team {
     }
     public String getTeamName(){    //SR 2.3.8 - A public string method named getTeamName that returns the teamName data field.
         return teamName;
+    }
+    public int getTeamMax(){
+        return(this.players.length);
+    }
+    public int getnoOfObjects(){
+        return(noOfObjects);        //return the number of teams generated
     }
     
 

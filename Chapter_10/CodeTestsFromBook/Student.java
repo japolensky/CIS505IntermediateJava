@@ -1,7 +1,5 @@
 package Chapter_10.CodeTestsFromBook;
 
-import java.net.SocketImpl;
-
 public class Student {
     int rollno;  
     String name,course;  
