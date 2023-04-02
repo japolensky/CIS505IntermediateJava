@@ -7,7 +7,7 @@
         Instructions for Assignment3.1.pdf
  */
 
-    Java Formatter https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+  //  Java Formatter. https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 /*
  *  Wilkowski, D. (2020) ANSI escape codes https://gist.github.com/dominikwilkowski/60eed2ea722183769d586c76f22098dd
@@ -18,17 +18,11 @@
 
  package MODULE_3;
 
-import java.time.Clock;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /* 
  (The Account class #3). Design a class named Account to represent an account. This class contains:
-
-
-
-
  */
 public class Account {
 
