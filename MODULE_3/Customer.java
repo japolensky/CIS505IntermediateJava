@@ -18,6 +18,13 @@ private String address;
 private String city;
 private String zip;
 
+void Customer(){
+    this.name=null;
+    this.address=null;
+    this.city=null;
+    this.zip=null;
+    
+}
 
 
 }
