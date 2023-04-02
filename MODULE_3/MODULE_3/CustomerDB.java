@@ -37,7 +37,7 @@ public class CustomerDB {
             return(new Customer("Philip J Fry", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"))
         }          
             else 
-            return(new Customer()); // return default object - also null.
+            return(new Customer()); // return default object - it is null.
                 
     }//end of getCustomer
         
