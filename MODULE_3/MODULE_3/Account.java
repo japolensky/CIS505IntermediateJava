@@ -56,7 +56,7 @@ public class Account {
 //  Enter <W/w> for withdraw
 //  Enter <B/b> for balance
 //    Enter option>: 
-    public void displayMenu(){
+    public static void displayMenu(){
         System.out.println("  Account Menu");
         System.out.println("  Enter <W/w> for withdraw");
         System.out.println("  Enter <B/b> for balance");

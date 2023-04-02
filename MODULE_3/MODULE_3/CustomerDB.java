@@ -27,9 +27,15 @@ package MODULE_3;
 public class CustomerDB {
 
     public static Customer getCustomer(int id){
-        if ((id==1007) || (id==1008) || (id==1009)) {  // handle success comparison list from 1.1
-            return(new Customer(null, null, null, null));//return unique object - null, but unique - needs populated with data
-            }            
+        if (id==1007)      {  // handle success comparison list from 1.1
+            return(new Customer("Jennifer Patterson", "8422 Grover Ave", "Bellevue", "68123"));//return unique object
+            } 
+        else if (id==1008) {
+            return(new Customer("Bender Bending Rodriguez", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"))
+        }      
+        else if (id==1009) {
+            return(new Customer("Philip J Fry", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"))
+        }          
             else 
             return(new Customer()); // return default object - also null.
                 
