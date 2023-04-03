@@ -43,7 +43,7 @@ public static void main(String[] args) {// begin main
         System.out.println("The selected user was:"+id);
         if ((id==1007)||(id==1008)||(id==1009)){
         
-            
+         input.close();//close the scanner   
         }else{//For invalid selections, display a message “Error: Invalid Option.”
             exit=false;// stay in loop until a valid customer ID is entered 
             System.out.println("Error: Invalid Option.");
