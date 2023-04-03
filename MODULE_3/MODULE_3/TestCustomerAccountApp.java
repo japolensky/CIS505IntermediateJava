@@ -110,8 +110,7 @@ public static void main(String[] args) {// begin main
                     
                 }
                 else if ((action=='B')||(action=='b')){
-                    double bal=acct.getBalance();
-                    System.out.printf("Account balance: $%,6.2f\n",bal);
+                    System.out.printf("\n  Account balance: $%,6.2f\n",acct.getBalance());
                                             
                         
                 }
@@ -131,7 +130,9 @@ public static void main(String[] args) {// begin main
                     }
                
                 }while (exit!=true); //end do    
-   
+    System.out.println("  --Customer Details--");
+    System.out.println(cust.toString()); //test what is made *** remove for operation  
+    System.out.printf("\n  Balance as of "+acct.getTransactionDate()+" is $%,6.2f\n",acct.getBalance());
 
 
         }//end main
