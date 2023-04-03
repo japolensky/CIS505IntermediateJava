@@ -6,7 +6,9 @@
     Gold, P. (2023).  CIS 505 Intermediate Java Programming. Bellevue University, all rights reserved
         Instructions for Assignment3.1.pdf
  */
-
+/*
+ *  
+ */
 /*
  *  Wilkowski, D. (2020) ANSI escape codes https://gist.github.com/dominikwilkowski/60eed2ea722183769d586c76f22098dd
  */
@@ -15,6 +17,8 @@
  */
 
 package MODULE_3;
+import java.text.NumberFormat;
+import java.util.Currency;
 /* 
 (The TestCustomerAccountApp class #4). Design a class named TestCustomerAccountApp to test the Account, Customer, and CustomerDB classes:
 
@@ -29,6 +33,7 @@ import java.util.Scanner; // using scanners
 
 public class TestCustomerAccountApp {
 public static void main(String[] args) {// begin main 
+
     double value = 0.0; // value for transaction
     Integer id=null; // account identifier
     Character action=null; // account action character    
@@ -92,7 +97,7 @@ public static void main(String[] args) {// begin main
                 }
 
                 else if ((action=='W')||(action=='w')){
-                        System.out.print("\n    Enter withdrawal amount:");
+                        System.out.print("\n    Enter withdrawal amount: ");
                                                 
                             try {
                                 value=input.nextDouble();
@@ -105,16 +110,9 @@ public static void main(String[] args) {// begin main
                     
                 }
                 else if ((action=='B')||(action=='b')){
-                    System.out.print("\n    Account Balance : "+acct.getBalance());
+                    System.out.print("\n    Account Balance: $%,6.2f",acct.getBalance()+"\n");
                                             
-                        try {
-                            value=input.nextDouble();
-                                            if (value>0){
-                                         acct.deposit(value);       
-                                            }
-                        } catch (Exception e) {
-                            value=0.00;// set value to value within reason for bad input 
-                        }
+                        
                 }
                 else{//For invalid selections, display a message “Error: Invalid Option.”
                     exit=false;// stay in loop until a valid customer ID is entered 
