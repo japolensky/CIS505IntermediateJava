@@ -31,10 +31,10 @@ public class CustomerDB {
             return(new Customer("Jennifer Patterson", "8422 Grover Ave", "Bellevue", "68123"));//return unique object
             } 
         else if (id==1008) {
-            return(new Customer("Bender Bending Rodriguez", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"))
+            return(new Customer("Bender Bending Rodriguez", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"));
         }      
         else if (id==1009) {
-            return(new Customer("Philip J Fry", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"))
+            return(new Customer("Philip J Fry", "Unit 00100100 - Robot Arms Apartments", "New New York", "10001"));
         }          
             else 
             return(new Customer()); // return default object - it is null.

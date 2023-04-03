@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestCustomerAccountApp",
+            "request": "launch",
+            "mainClass": "MODULE_3.TestCustomerAccountApp",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "TestSportsTeamApp",
             "request": "launch",
             "mainClass": "MODULE_2.SportsTeamApp.TestSportsTeamApp",
