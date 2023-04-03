@@ -28,7 +28,7 @@ package MODULE_3;
 import java.util.Scanner; // using a scanner
 
 public class TestCustomerAccountApp {
-public static void main(String[] args) {
+public static void main(String[] args) {// begin main 
     boolean exit=true; // using this to jump out of loop SR 3.1.4 do...while loop requirement
         //1. Prompt the user to enter a customer number between 1007 and 1009. 
         // Use the inputted number to invoke the getCustomer static method and assign the returned value to a variable named customer.
@@ -51,16 +51,12 @@ public static void main(String[] args) {
         
         }while (exit!=true); //end do
  
-
-
             do  {       //begin do
                         //2. Display the account menu using the accounts displayMenu method.
                 Account.displayMenu(); // show the figure 3.5 account menu from the account class
                 
-                }
-                    finally{//begin finally
+            }while (exit!=true); //end do
+       
+        }//end main
 
-                    }// end finally
-         }while (exit!=true); //end do
-        }
-}
+    } // end class

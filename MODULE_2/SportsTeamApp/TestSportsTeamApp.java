@@ -62,6 +62,7 @@ public class TestSportsTeamApp {  //begin class
         }// end finally
         }while (exit!=true); //end do
         System.out.println("\n\n  End of line...");
+        input.close();// close the scanner
     } //end main 
 } // end class
                                                         
