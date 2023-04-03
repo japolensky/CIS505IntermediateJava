@@ -57,10 +57,11 @@ public class Account {
 //  Enter <B/b> for balance
 //    Enter option>: 
     public static void displayMenu(){
-        System.out.println("  Account Menu");
+        System.out.println("\n  Account Menu");
+        System.out.println("  Enter <D/d> for deposit");
         System.out.println("  Enter <W/w> for withdraw");
         System.out.println("  Enter <B/b> for balance");
-        System.out.println("    Enter option>: ");
+        System.out.print("    Enter option>: ");
     }
 
 //6. A public method named getTransactionDate with a return type of string. Return a date using the format MM-dd-yyyy.

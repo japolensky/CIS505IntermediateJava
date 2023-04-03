@@ -84,10 +84,10 @@ public class Customer {
   //  8. Override the toString() method.
 @Override
 public String toString(){
-    return ("\n    Name:   "+this.name+
-            "\n    Address:"+this.address+
-            "\n    City:   "+this.city+
-            "\n    Zip:    "+this.zip);
+    return ("\n    Name:    "+this.name+
+            "\n    Address: "+this.address+
+            "\n    City:    "+this.city+
+            "\n    Zip:     "+this.zip);
 
 }
    

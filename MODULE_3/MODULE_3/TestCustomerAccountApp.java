@@ -25,38 +25,115 @@ package MODULE_3;
 5. After exiting the menu, display the customers details using the customer classes toString() method. 
     Next, on a separate line, show the customers account balance.
 */
-import java.util.Scanner; // using a scanner
+import java.util.Scanner; // using scanners
 
 public class TestCustomerAccountApp {
 public static void main(String[] args) {// begin main 
+    double value = 0.0; // value for transaction
+    Integer id=null; // account identifier
+    Character action=null; // account action character    
     boolean exit=true; // using this to jump out of loop SR 3.1.4 do...while loop requirement
         //1. Prompt the user to enter a customer number between 1007 and 1009. 
         // Use the inputted number to invoke the getCustomer static method and assign the returned value to a variable named customer.
     System.out.println("  Welcome to the Customer Account App");
         do{
+        exit=true;
+        id=null;
+
         System.out.println("\n  Enter a customer ID:");
-        System.out.println("    ex: 1007, 1008, 1009>:");
+        System.out.print("    ex: 1007, 1008, 1009>:");
 
         Scanner input = new Scanner(System.in); // create a scanner for user input
-        Integer id=input.nextInt(); //get the account number from the user
+        try {
+            id=input.nextInt(); //get the account number from the user     
+        } catch (Exception e) {
+            id=0;// set id to zero if incorrect input
+        }
+       
+        
         //3. Handle the user’s selection and invoke the corresponding method. 
-        System.out.println("The selected user was:"+id);
+        System.out.println("\n   The selected user was:"+id);
         if ((id==1007)||(id==1008)||(id==1009)){
         
-         input.close();//close the scanner   
         }else{//For invalid selections, display a message “Error: Invalid Option.”
             exit=false;// stay in loop until a valid customer ID is entered 
             System.out.println("Error: Invalid Option.");
              }
-        
+       
         }while (exit!=true); //end do
- 
+        
+        Customer cust = CustomerDB.getCustomer(id);  // create customer object from the testDB
+        Account acct = new Account();
+        System.out.println(cust.toString()); //test what is made *** remove for operation      
+        
             do  {       //begin do
                         //2. Display the account menu using the accounts displayMenu method.
-                Account.displayMenu(); // show the figure 3.5 account menu from the account class
+                action=null; // character for operator input
+                Scanner input = new Scanner(System.in); // create a scanner for user input
                 
-            }while (exit!=true); //end do
-       
+                Account.displayMenu(); // show the figure 3.5 account menu from the account class
+                try {
+                    action=input.next().charAt(0); //get the account action from the user     
+                } catch (Exception e) {
+                    action=' ';// set an invalid action
+                }
+                if ((action=='D')||(action=='d')){
+                System.out.print("\n    Enter deposit amount:");
+                                        
+                    try {
+                        value=input.nextDouble();
+                                        if (value>0){
+                                     acct.deposit(value);       
+                                        }
+                    } catch (Exception e) {
+                        value=0.00;// set value to value within reason for bad input 
+                    }
+                }
+
+                else if ((action=='W')||(action=='w')){
+                        System.out.print("\n    Enter withdrawal amount:");
+                                                
+                            try {
+                                value=input.nextDouble();
+                                                if (value>0){
+                                             acct.withdraw(value);       
+                                                }
+                            } catch (Exception e) {
+                                value=0.00;// set value to value within reason for bad input 
+                            }
+                    
+                }
+                else if ((action=='B')||(action=='b')){
+                    System.out.print("\n    Account Balance : "+acct.getBalance());
+                                            
+                        try {
+                            value=input.nextDouble();
+                                            if (value>0){
+                                         acct.deposit(value);       
+                                            }
+                        } catch (Exception e) {
+                            value=0.00;// set value to value within reason for bad input 
+                        }
+                }
+                else{//For invalid selections, display a message “Error: Invalid Option.”
+                    exit=false;// stay in loop until a valid customer ID is entered 
+                    System.out.println("  Error: Invalid Option.");
+                    System.out.print("\n  Continue? (y/n): ");
+                    try {
+                        action=input.next().charAt(0); //get the account action from the user     
+                    } catch (Exception e) {
+                        action=' ';// set an invalid action
+                    }
+                    if ((action=='Y')||(action=='y')){
+                        continue;
+                    }
+                        else break;
+                    }
+               
+                }while (exit!=true); //end do    
+   
+
+
         }//end main
 
     } // end class
