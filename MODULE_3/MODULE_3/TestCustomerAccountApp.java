@@ -69,6 +69,7 @@ public static void main(String[] args) {// begin main
             do  {       //begin do
                         //2. Display the account menu using the accounts displayMenu method.
                 action=null; // character for operator input
+                exit=false;
                 Scanner input = new Scanner(System.in); // create a scanner for user input
                 
                 Account.displayMenu(); // show the figure 3.5 account menu from the account class
