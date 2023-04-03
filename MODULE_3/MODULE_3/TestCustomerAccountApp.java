@@ -17,8 +17,7 @@
  */
 
 package MODULE_3;
-import java.text.NumberFormat;
-import java.util.Currency;
+
 /* 
 (The TestCustomerAccountApp class #4). Design a class named TestCustomerAccountApp to test the Account, Customer, and CustomerDB classes:
 
