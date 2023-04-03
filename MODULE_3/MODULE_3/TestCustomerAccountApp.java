@@ -110,7 +110,8 @@ public static void main(String[] args) {// begin main
                     
                 }
                 else if ((action=='B')||(action=='b')){
-                    System.out.print("\n    Account Balance: $%,6.2f",acct.getBalance()+"\n");
+                    double bal=acct.getBalance();
+                    System.out.printf("Account balance: $%,6.2f\n",bal);
                                             
                         
                 }
@@ -118,7 +119,7 @@ public static void main(String[] args) {// begin main
                     exit=false;// stay in loop until a valid customer ID is entered 
                     System.out.println("  Error: Invalid Option.");
                     System.out.print("\n  Continue? (y/n): ");
-                    try {
+                    try { 
                         action=input.next().charAt(0); //get the account action from the user     
                     } catch (Exception e) {
                         action=' ';// set an invalid action
