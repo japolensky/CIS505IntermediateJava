@@ -33,11 +33,8 @@ public class Customer {
 5. A no-argument constructor that creates a default customer.
 
  */    
-    Customer(){
-        this.name=null;
-        this.address=null;
-        this.city=null;
-        this.zip=null;     
+    Customer(){  // this is the default customer object.
+        this("guest Name","guest street","guest City","guest zip");// have to use the setters to create appropriate values
     }
 //  6. An argument constructor that creates a customer using the four data fields.
 //   JP - I set the parameters using the setters.
