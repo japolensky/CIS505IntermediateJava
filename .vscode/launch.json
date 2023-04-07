@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "utilitarian",
+            "request": "launch",
+            "mainClass": "Module_4.otra_w4.utilitarian",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "pizza",
             "request": "launch",
             "mainClass": "Module_4.otra_w4.pizza",
