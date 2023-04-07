@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pizza",
+            "request": "launch",
+            "mainClass": "Module_4.otra_w4.pizza",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "hs",
+            "request": "launch",
+            "mainClass": "Module_4.otra_w4.hs",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "TestCustomerAccountApp",
             "request": "launch",
             "mainClass": "MODULE_3.TestCustomerAccountApp",
