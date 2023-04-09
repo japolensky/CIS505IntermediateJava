@@ -25,8 +25,7 @@ public class AdityaGoel {
         ht.put(102,"Ravi");
         ht.put(103,"Rahul");
         System.out.println("-------------Hash table--------------");
-
-       ht.forEach(System.out::println);            
+            
         
 
         for  (Map.Entry m:ht.entrySet()) {
