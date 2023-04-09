@@ -1,4 +1,5 @@
 package MODULE_4.BowlingShopApp;
+import java.util.List;
 /*
     Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
         Comprehensive Version (12th ed.). Pearson Education, Inc.
@@ -27,7 +28,7 @@ package MODULE_4.BowlingShopApp;
  */
 
 public class ProductDB {
-    public static GenericQueue getProducts(String code){
+    public static <GenericQueue> T  getProducts(String code){
         GenericQueue<Product> balls = new GenericQueue<Product>();
         balls.enqueue(ball1);
     }
