@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AdityaGoel",
+            "request": "launch",
+            "mainClass": "MODULE_4.otra_w4.AdityaGoel",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "longexamples",
             "request": "launch",
             "mainClass": "MODULE_4.otra_w4.longexamples",
