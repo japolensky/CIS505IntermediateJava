@@ -9,8 +9,6 @@ package MODULE_4.BowlingShopApp;
  */
 
  /*  Assignment 4.1 - Bowling Shop App - Implementation by Polensky(2023)
- * 
- * (The Product class #1). Design a superclass named product to represent a product in a bowling shop.
  */
 /*
 (The Bag class #3). Design a product subclass named bag to represent a bowling bag.
