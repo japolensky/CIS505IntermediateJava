@@ -6,7 +6,7 @@
 /*
  * additional modifications by JAPOLENSKY@my365.bellevue.edu
  */
-package Module_4.otra_w4;
+package MODULE_4.otra_w4;
 import java.util.HashSet;
 public class hs {
         public static void main(String[] args) {
