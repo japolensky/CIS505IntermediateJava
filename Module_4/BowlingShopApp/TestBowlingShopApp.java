@@ -44,17 +44,19 @@ public class TestBowlingShopApp {
             //       2.4 Use the products toString method to display the results.
             
 
-do {
+ while ((action!="x")||action!="X"||action!=("4")) {
     displayMenu();
     action = String.valueOf(input.nextLine().charAt(0));
      if ((action=="x")||action=="X"||action==("4")){break;}; // end interface loop on exit command
+  
     products = ProductDB.getProducts(action);   //2.1 Assign the results to a product generic queue named products. 
     System.out.println("\n  --Product Listing--");
     while(products.size() > 0) {
         System.out.println(products.dequeue().toString()+"\n");
         } // end dequeue while loop nested
-    }
-        input.close();// close the scanner
+  
+     }
+      input.close();// close the scanner
    } // end main1
 
 
