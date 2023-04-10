@@ -39,20 +39,22 @@ public class TestBowlingShopApp {
        GenericQueue<Product> products = new GenericQueue<Product>();
         //       2. Display the menu to the user and invoke the getProducts method from the ProductDB class with the user’s entry as the argument. 
             
-            //       2.2 Using a while loop iterate over the queue and invoke the dequeue method to display the contents.
-            //       2.3 Special note. Use the queues size method in the while loops signature to keep track of your placement in the queue. 
-            //       2.4 Use the products toString method to display the results.
+
             
 
- while ((action!="x")||action!="X"||action!=("4")) {
+            
+
+ while ((action.charAt(0)!='x')||action.charAt(0)!='X'||action.charAt(0)!=('4')) {
     displayMenu();
     action = String.valueOf(input.nextLine().charAt(0));
-     if ((action=="x")||action=="X"||action==("4")){break;}; // end interface loop on exit command
+     if ((action.charAt(0)=='x')||action.charAt(0)=='X'||action.charAt(0)==('4')){break;}; // end interface loop on exit command
   
     products = ProductDB.getProducts(action);   //2.1 Assign the results to a product generic queue named products. 
     System.out.println("\n  --Product Listing--");
-    while(products.size() > 0) {
-        System.out.println(products.dequeue().toString()+"\n");
+                
+    while(products.size() > 0) {    // 2.2 Using a while loop iterate over the queue and invoke the dequeue method to display the contents. 
+                                    // 2.3 Special note. Use the queues size method in the while loops signature to keep track of your placement in the queue.         
+        System.out.println(products.dequeue().toString());//2.4 Use the products toString method to display the results.
         } // end dequeue while loop nested
   
      }
