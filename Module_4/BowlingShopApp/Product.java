@@ -20,6 +20,11 @@ public class Product {              // Begin Product class
     Product(){                      // 4. A no-argument constructor that creates a default product.
 
     }
+    Product(String Code, String Description, double Price){  // constructor with arguements
+        setCode(Code);
+        setDescription(Description);
+        setPrice(Price);
+    }
                                     // 5. Accessor and mutator methods for all three data fields.
     public String getCode() {           // Accessor
         return code;

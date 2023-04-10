@@ -14,25 +14,31 @@ package MODULE_4.BowlingShopApp;
  */
 /*
  * (The Ball class #2). Design a product subclass named ball to represent a bowling ball.
-
-
  */
 public class Ball extends Product {
     private String color="";        // 1. A private string data field named color that specifies the color of a bowling ball. The default is an empty string.
     Ball(){                         // 2. A no-argument constructor that creates a default ball.
+           super(); // call the super class constructor
+           this.color=""; 
+        }
 
-    }
+    //   JP - I set the parameters using the setters.
+        Ball(String color){  // arguement with constructor
+            super();
+            setColor(color);
+        }
+    
                                     // 3. Accessor and mutator methods for the color data field.
     public String getColor() {          //Accessor
         return color;
     }
     public void setColor(String color) { //Mutator
         this.color = color;
-    }
+    } //end setColor
 
    // 4. Override the toString() method. Return an appended string of the superclass with an additional field for the bowling balls color.
 @Override
-public String toString() {
+    public String toString() {
     return super.toString()+"\n    Color:    "+this.color;
-}
-}
+}  // end toString
+}  //end of the Ball class
