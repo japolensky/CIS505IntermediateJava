@@ -21,7 +21,7 @@ public class ProductDB {
     public static GenericQueue<Product> getProducts(String code){
 
             // 2. Using an if…else if…else if…else check the argument against the values “b, s, and a.” 
-            if((code.equalsIgnoreCase("b")|| code=="1")) {
+            if((code.equalsIgnoreCase("b")|| (code=="1"))) {
 
                 // 2.1. For arguments that equal “b” create five (5) new ball instances
                 //      {set all four data fields with values, and add them to a product generic queue named balls.}
@@ -65,7 +65,7 @@ public class ProductDB {
     }
             // 2.2 For arguments that equal “s” create five (5) new shoe instances
             //     {set all four data fields with values, and add them to a product generic queue named shoes.}
-        else if((code.equalsIgnoreCase("s")|| code=="2")) {
+        else if((code.equalsIgnoreCase("s")|| (code=="2"))) {
             GenericQueue<Product> shoes = new GenericQueue<Product>();
             Shoe s1 = new Shoe();
             s1.setCode("s1001");
@@ -106,7 +106,7 @@ public class ProductDB {
     }  //end shoes
             // 2.3 For arguments that equal “a’ create three (3) new BAG instances
             //     {set all four data fields with values, and add them to a product generic queue named shoes.}
-        else if((code.equalsIgnoreCase("a")|| code=="3")) {
+        else if((code.equalsIgnoreCase("a")|| (code=="3"))) {
             GenericQueue<Product> bags = new GenericQueue<Product>();
             Bag a1 = new Bag();
             a1.setCode("bag2017");

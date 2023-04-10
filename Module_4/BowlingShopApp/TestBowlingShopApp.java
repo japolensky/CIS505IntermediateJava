@@ -34,16 +34,10 @@ import java.util.Scanner;
 public class TestBowlingShopApp {
    public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    String action = "";
+    String action = " ";
 
        GenericQueue<Product> products = new GenericQueue<Product>();
-        //       2. Display the menu to the user and invoke the getProducts method from the ProductDB class with the user’s entry as the argument. 
-            
-
-            
-
-            
-
+        //       2. Display the menu to the user and invoke the getProducts method from the ProductDB class with the user’s entry as the argument.        
  while ((action.charAt(0)!='x')||action.charAt(0)!='X'||action.charAt(0)!=('4')) {
     displayMenu();
     action = String.valueOf(input.nextLine().charAt(0));
@@ -63,7 +57,7 @@ public class TestBowlingShopApp {
 
 
     public static void displayMenu(){  // prints the menu for the user
-        System.out.println("   MENU OPTIONS");
+        System.out.println("\n   MENU OPTIONS");
         System.out.println("     1. <b> Bowling Balls");
         System.out.println("     2. <a> Bowling Bags");
         System.out.println("     3. <s> Bowling Shoes");
