@@ -48,8 +48,8 @@ public class Product {              // Begin Product class
     }
     @Override
     public String toString() {      //6. Override the toString() method. Return a description of the product with all three fields on separate lines.
-        return ("\n    Code:    "+this.code+
-                "\n    Description: "+this.description+
-                "\n    Price:    "+this.price);
+        return ("\n    Product Code: "+this.code+
+                "\n     Description: "+this.description+
+                "\n           Price: "+this.price);
     }
 }                                   // End product class   

@@ -39,6 +39,7 @@ public class Ball extends Product {
    // 4. Override the toString() method. Return an appended string of the superclass with an additional field for the bowling balls color.
 @Override
     public String toString() {
-    return super.toString()+"\n    Color:    "+this.color;
+    return super.toString()+"\n           Color: "+this.color;
+                          //"\n           Price: "+this.price);//for reference placement
 }  // end toString
 }  //end of the Ball class

@@ -26,6 +26,7 @@ public void setSize(double size) {//Mutator
 }
     @Override               // 4. Override the toString() method. Return an appended string of the superclass with an additional field for the shoe size.
     public String toString() {  
-        return super.toString()+"\n    Size:    "+this.size;
-    }
+        return super.toString()+"\n            Size: "+this.size;
+                              //"\n           Price: "+this.price);//for reference placement
+    }   
 }

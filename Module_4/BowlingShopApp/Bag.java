@@ -27,7 +27,8 @@ public void setType(String type) {  //Mutator
         // 4. Override the toString() method. Return an appended string of the superclass with an additional field for the bags type.
     @Override
     public String toString() {
-        return super.toString()+"\n    Color:    "+this.type;
+        return super.toString()+"\n           Color: "+this.type;
+                              //"\n           Price: "+this.price);//for reference placement
     }
 }
 
