@@ -18,13 +18,15 @@ public class Product {              // Begin Product class
     private double price=0;         // 3. A private double data field named price that specifies the price of a product. The default value is 0.
 
     Product(){                      // 4. A no-argument constructor that creates a default product.
-
-    }
+        this.code = "";
+        this.description = "";
+        this.price = 0.00;
+    }  // end of default constructor
     Product(String Code, String Description, double Price){  // constructor with arguements
         setCode(Code);
         setDescription(Description);
         setPrice(Price);
-    }
+    }  // end of arguement constructor
                                     // 5. Accessor and mutator methods for all three data fields.
     public String getCode() {           // Accessor
         return code;

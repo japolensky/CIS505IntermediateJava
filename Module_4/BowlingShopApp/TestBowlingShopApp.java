@@ -23,11 +23,7 @@ __________________________
 
   Please choose an option:
 __________________________
-2. Display the menu to the user and invoke the getProducts method from the ProductDB class with the user’s entry as the argument. 
-    2.1 Assign the results to a product generic queue named products. 
-    2.2 Using a while loop iterate over the queue and invoke the dequeue method to display the contents.
-    2.3 Special note. Use the queues size method in the while loops signature to keep track of your placement in the queue. 
-    2.4 Use the products toString method to display the results.
+
 
 3. Allow the user to keep selecting options until “x” is chosen.
     3.1 Special note. Pay close attention to the format of the price data field. 
@@ -37,14 +33,34 @@ __________________________
 import java.util.Scanner;
 public class TestBowlingShopApp {
    public static void main(String[] args) {
-    
-   }
-   public static void displayMenu(){
-    System.out.println("   MENU OPTIONS");
-    System.out.println("     1. <b> Bowling Balls");
-    System.out.println("     2. <a> Bowling Bags");
-    System.out.println("     3. <s> Bowling Shoes");
-    System.out.println("     4. <x> To Exit \n");
-      System.out.print("  Please choose an option:");
-} 
-}
+    Scanner input = new Scanner(System.in);
+    String action = "";
+
+       GenericQueue<Product> products = new GenericQueue<Product>();
+        //       2. Display the menu to the user and invoke the getProducts method from the ProductDB class with the user’s entry as the argument. 
+            
+            //       2.2 Using a while loop iterate over the queue and invoke the dequeue method to display the contents.
+            //       2.3 Special note. Use the queues size method in the while loops signature to keep track of your placement in the queue. 
+            //       2.4 Use the products toString method to display the results.
+            
+
+while ((action.equalsIgnoreCase("x"))||action!=("4")){
+    displayMenu();
+    action = String.valueOf(input.nextLine().charAt(0));
+    products = ProductDB.getProducts(action);   //2.1 Assign the results to a product generic queue named products. 
+    System.out.println("\n  --Product Listing--");
+    while(products.size() > 0) {
+        System.out.println(products.dequeue().toString()+"\n");
+        }
+        input.close();// close the scanner
+   } // end main
+
+    public static void displayMenu(){
+        System.out.println("   MENU OPTIONS");
+        System.out.println("     1. <b> Bowling Balls");
+        System.out.println("     2. <a> Bowling Bags");
+        System.out.println("     3. <s> Bowling Shoes");
+        System.out.println("     4. <x> To Exit \n");
+        System.out.print("  Please choose an option:");
+        } // end displaymenu
+} // end TestBowlingShopApp class
