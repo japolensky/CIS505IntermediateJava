@@ -51,11 +51,12 @@ while ((action.equalsIgnoreCase("x"))||action!=("4")){
     System.out.println("\n  --Product Listing--");
     while(products.size() > 0) {
         System.out.println(products.dequeue().toString()+"\n");
-        }
+        } // end dequeue while loop nested
+    } // end interface loop
         input.close();// close the scanner
    } // end main
 
-    public static void displayMenu(){
+    public static void displayMenu(){  // prints the menu for the user
         System.out.println("   MENU OPTIONS");
         System.out.println("     1. <b> Bowling Balls");
         System.out.println("     2. <a> Bowling Bags");
