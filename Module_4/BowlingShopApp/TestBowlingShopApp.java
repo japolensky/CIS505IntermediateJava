@@ -52,7 +52,7 @@ do {
     while(products.size() > 0) {
         System.out.println(products.dequeue().toString()+"\n");
         } // end dequeue while loop nested
-    }while ((action.equalsIgnoreCase("x"))||action!=("4")) // end interface loop
+    }while ((action!="x")||action!="X"||action!=("4")); // end interface loop
         input.close();// close the scanner
    } // end main1
 
