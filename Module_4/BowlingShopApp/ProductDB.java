@@ -28,8 +28,9 @@ import java.util.List;
  */
 
 public class ProductDB {
-    public static <GenericQueue> T  getProducts(String code){
+    public static GenericQueue<Product> getProducts(String code){
         GenericQueue<Product> balls = new GenericQueue<Product>();
         balls.enqueue(ball1);
     }
+
 }
