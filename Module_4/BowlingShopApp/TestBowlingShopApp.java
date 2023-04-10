@@ -44,7 +44,7 @@ public class TestBowlingShopApp {
             //       2.4 Use the products toString method to display the results.
             
 
-while ((action.equalsIgnoreCase("x"))||action!=("4")){
+do {
     displayMenu();
     action = String.valueOf(input.nextLine().charAt(0));
     products = ProductDB.getProducts(action);   //2.1 Assign the results to a product generic queue named products. 
@@ -52,9 +52,10 @@ while ((action.equalsIgnoreCase("x"))||action!=("4")){
     while(products.size() > 0) {
         System.out.println(products.dequeue().toString()+"\n");
         } // end dequeue while loop nested
-    } // end interface loop
+    }while ((action.equalsIgnoreCase("x"))||action!=("4")) // end interface loop
         input.close();// close the scanner
-   } // end main
+   } // end main1
+
 
     public static void displayMenu(){  // prints the menu for the user
         System.out.println("   MENU OPTIONS");
