@@ -25,7 +25,7 @@ __________________________
 __________________________
 
 
-3. Allow the user to keep selecting options until “x” is chosen.
+3.  Allow the user to keep selecting options until “x” is chosen.
     3.1 Special note. Pay close attention to the format of the price data field. 
     3.2 Use the printf method and pattern “$%,6.2f” in the product classes toString method.
 4. Compress all Java files into a Jar file named <YourLastName>BowlingShopApp.jar.
