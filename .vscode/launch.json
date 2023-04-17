@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestExpenseTracker",
+            "request": "launch",
+            "mainClass": "MODULE_5.ExpenseTracker.TestExpenseTracker",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "FormatCurrencyTesting",
             "request": "launch",
             "mainClass": "MODULE_5.OtherThingsForWeek5.FormatCurrencyTesting",

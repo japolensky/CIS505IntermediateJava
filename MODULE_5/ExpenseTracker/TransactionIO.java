@@ -58,10 +58,10 @@ private static File file = new File(FILE_NAME); // 2. A private File data field 
         
         ArrayList<Transaction> tran = new ArrayList<Transaction>();
         //iterate over the lines, and return an ArrayList of transactions.
-        while(input.hasNext()) {    // Use while (input.hasNext()) to iterate over the file and assign the data fields to a new instance of a transaction object.          
-            tran.add(new Transaction(input.next(), input.next(), input.nextDouble()));
+        while(input.hasNext()) {    // Use while (input.hasNext()) to iterate over the file and assign the data fields to a new instance of a transaction object.   
+        
+            tran.add(new Transaction(input.next(), input.next(), input.nextDouble()));//gets the next set of date String, description String, price Double from file
         }
-
         input.close();
         return tran;
 

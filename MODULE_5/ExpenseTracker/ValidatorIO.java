@@ -27,7 +27,7 @@ public class ValidatorIO {
         boolean isValid = false;
   //  Using a while loop check if isValid is false, display the contents of the prompt variable to the console, 
   //  and use an if…else statement to check for Scanner hasNextInt(). 
-    while(isValid=false) {
+    while(isValid==false) {
         System.out.print(prompt);
         if(sc.hasNextInt()) {
             input = sc.nextInt();
@@ -48,7 +48,7 @@ public class ValidatorIO {
     public static Double getDouble(Scanner sc, String prompt) {
         Double input = 0.0;
         boolean isValid = false;
-        while(!isValid) {
+        while(isValid==false) {
             System.out.print(prompt);
             if(sc.hasNextDouble()) {
                 input = sc.nextDouble();
@@ -65,7 +65,9 @@ public class ValidatorIO {
         // 3. A static method named getString with a Scanner argument named sc and a string argument named prompt and a string return type. 
     public static String getString(Scanner sc, String prompt){          
         System.out.println(prompt);     //  Display the prompt message and 
-                                        //  use sc.next() to capture the user’s inputted value. 
-        return sc.next(sc.nextLine());  // Return the inputted value.                
+        String input = sc.next();       //  use sc.next() to capture the user’s inputted value. 
+        sc.nextLine();
+        return input;
+        //return sc.next(sc.nextLine());  // Return the inputted value.                
     } // end of getString method
 } // end of ValidatorIO class

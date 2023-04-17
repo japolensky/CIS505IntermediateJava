@@ -49,12 +49,12 @@ public class Transaction {
         this.amount = amount;
     }
         // 5. A no-argument constructor that creates a default transaction.
-    public void Transaction(){
-        this.Transaction(LocalDate.now().toString(),"",0.0);
+    public Transaction(){
+        this(LocalDate.now().toString(),"",0.0);
 
     }
     // 6. An argument constructor that creates a transaction using the three data fields.
-    public void Transaction(String date, String description, double amount){
+    public Transaction(String date, String description, Double amount){
         this.date=date;
         this.description=description;
         this.amount=amount;
