@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FormatCurrencyTesting",
+            "request": "launch",
+            "mainClass": "MODULE_5.OtherThingsForWeek5.FormatCurrencyTesting",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "TestBowlingShopApp",
             "request": "launch",
             "mainClass": "MODULE_4.BowlingShopApp.TestBowlingShopApp",
