@@ -69,7 +69,7 @@ public class TestExpenseTracker {
                 // This means you will need at least two while loops. 
                 // One to check if they want to stay in the main program and one to check if they want to stay in the “Add Transactions” section
                     c = "y";
-                    ArrayList<Transaction> lTransactions = new ArrayList<Transaction>();
+                    ArrayList<Transaction> inputTransactions = new ArrayList<Transaction>();
 
                     while(c.equalsIgnoreCase("y")) {
                         String description = ValidatorIO.getString(scanner, "\n Enter the description: ");
@@ -77,11 +77,11 @@ public class TestExpenseTracker {
                         Transaction tran = new Transaction();
                         tran.setDescription(description);
                         tran.setAmount(amount);
-                        lTransactions.add(tran);
+                        inputTransactions.add(tran);
                         c = ValidatorIO.getString(scanner, "\nAdd another transaction? (y/n): ");
                     }
                     try {
-                        TransactionIO.bulkInsert(lTransactions);
+                        TransactionIO.bulkInsert(inputTransactions);
                     }
                     catch(IOException e) {
                         System.out.println("\n Exception: "+e.getMessage());

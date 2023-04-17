@@ -10,8 +10,10 @@ package MODULE_5.ExpenseTracker;
 
 //import java.util.Date; // using Dates
 import java.time.*; // using time
+import java.text.DateFormat;
 // import java.util.Currency;  // using currency
 import java.text.NumberFormat; // using the numberformmatting with currency
+import java.text.SimpleDateFormat;
 import java.util.Locale; // using localizations
 
 /*  Assignment 5.1 - ExpenseTracker - Implementation by Polensky(2023)  
@@ -24,6 +26,7 @@ import java.util.Locale; // using localizations
  */
 public class Transaction {
     // 1. A private string data field named date that specifies the date of a transaction. The default value is today’s date formatted as “MM-dd-yyyy”
+
     private String date=LocalDate.now().toString();
     // 2. A private string data field named description that specifies the description of a transaction. The default is an empty string
     private String description = "" ;
@@ -31,7 +34,7 @@ public class Transaction {
     private double amount = 0.0;
     // 4. Accessor and mutator methods for the all three data fields.
     public void setDate(String date) {  //mutator
-        this.date = date;
+        this.date = LocalDate.now().toString();
     }  // end setDate
     public String getDate() {
         return date;
@@ -55,15 +58,15 @@ public class Transaction {
     }
     // 6. An argument constructor that creates a transaction using the three data fields.
     public Transaction(String date, String description, Double amount){
-        this.date=date;
+        this.date=LocalDate.now().toString();
         this.description=description;
         this.amount=amount;
     }
     // 7. Override the toString method. Return a string description of a transaction with all three data fields, on separate lines.
     @Override
     public String toString() {
-    
-        return  "  Date:        "+date+
+  
+        return  "  Date:        "+DateFormat.getDateInstance(1,Locale.US).format(date)+
               "\n  Description: "+description+
               "\n  Amount:      "+NumberFormat.getCurrencyInstance(Locale.US).format(amount)+"\n";
     }
