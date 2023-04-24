@@ -1,11 +1,17 @@
 package MODULE_6.ComposerApp;
+/*  Assignment 6.3 - ComposerApp - Implementation by Polensky(2023)  
+ */
+/*
+ *   Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
+ *       Comprehensive Version (12th ed.). Pearson Education, Inc.
+ */ 
+/*
+ *   Gold, P. (2023).  CIS 505 Intermediate Java Programming. Bellevue University, all rights reserved
+ *       Instructions for Assignment3.1.pdf
+ */
 /*
  * (The TestComposerApp class #5). Design a class named TestComposerApp to test the classes Composer and MemComposerDao. The class contains:
  */
-
-
-//1. Prompt the user with a menu matching figure 5.1.
-
 /*Figure 5.1
   Welcome to the Composer App
 
@@ -23,7 +29,7 @@ public class TestComposerApp {
 
 public static void main(String[] args) {
 
-
+//1. Prompt the user with a menu matching figure 5.1.
     Scanner s = new Scanner(System.in);
     System.out.println("Welcome to the Composer App\n");    
 
