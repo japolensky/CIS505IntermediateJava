@@ -16,7 +16,10 @@ import java.util.Scanner; // using a scanner
 
 public class TestSportsTeamApp {  //begin class
                         //SR 2.3.9a - Create a new file named TestSportsTeamApp with a main() method to test the Team class.
-   public static void main(String[] args) {  //begin main
+   /**
+ * @param args
+ */
+public static void main(String[] args) {  //begin main
                         // SR 2.3.9b - Prompt the user to enter the team and player names.
     System.out.println("  Welcome to the Sports Team App \n");
 
@@ -45,7 +48,7 @@ public class TestSportsTeamApp {  //begin class
     System.out.println("\n  --Team Summary--");
     System.out.print("\n  Number of Players on team: "+team1.getPlayerCount());
     System.out.print("\n  Players on team: ");
-    String[] teamSummary = team1.getPlayers(); 
+    final String[] teamSummary = team1.getPlayers(); 
     for (int i=0;i<(team1.getPlayerCount()); i++)   { //begin summary iterator
             System.out.print(teamArray[i]+", ");
                                                     } //end summary iterator
