@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PolenskyExpenseTracker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MODULE_5/ExpenseTracker/PolenskyExpenseTracker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

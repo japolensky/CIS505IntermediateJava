@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PolenskyComposerApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MODULE_6/ComposerApp/PolenskyComposerApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PolenskyCustomerAccountApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MODULE_3/MODULE_3/PolenskyCustomerAccountApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PolenskyBowlingShopApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MODULE_4/BowlingShopApp/PolenskyBowlingShopApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

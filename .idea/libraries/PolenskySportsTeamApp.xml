@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PolenskySportsTeamApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MODULE_2/SportsTeamApp/PolenskySportsTeamApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
