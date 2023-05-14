@@ -6,19 +6,19 @@
     "configurations": [
         {
             "type": "java",
-            "name": "ColorfulCircles",
+            "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "MODULE_7.fxtest.ColorfulCircles",
-            "projectName": "CIS505IntermediateJava_ecb6a142"
-        },
+            "mainClass": "$(file)"
+        }    ,
         {
             "type": "java",
-            "name": "ColorfulCircles",
+            "name": "Launch App",
             "request": "launch",
-            "mainClass": "MODULE_7.ColorfulCircles.src.colorfulcircles.ColorfulCircles.java",
-            "vmArgs": "--module-path C:/Program Files/Java/javafx-sdk-20.0.1/lib --add-modules javafx.controls, javafx.fxml",
+            "mainClass": "App",
+            "vmArgs": "--module-path C:\\Program Files\\Java\\javafx-sdk-20.0.1\\lib --add-modules javafx.controls, javafx.fxml",
             "projectName": "CIS505IntermediateJava_ecb6a142"
         },
+
         {
             "type": "java",
             "name": "SimpleDraw",
@@ -32,7 +32,7 @@
             "name": "Animation",
             "request": "launch",
             "mainClass": "MODULE_7.OtherWeek7_Efforts.Animation",
-            "vmArgs": "--module-path C://Program Files/Java/javafx-sdk-20.0.1/lib --add-modules javafx.controls, javafx.fxml",
+            "vmArgs": "--module-path C://Program Files//Java//javafx-sdk-20.0.1//lib --add-modules javafx.controls, javafx.fxml",
             "projectName": "CIS505IntermediateJava_ecb6a142"
         },
         {

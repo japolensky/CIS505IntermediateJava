@@ -18,5 +18,6 @@
         "org",
         "com",
         ""
-    ]
+    ],
+    "maven.view": "hierarchical"
 }
