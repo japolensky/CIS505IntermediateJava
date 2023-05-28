@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package MODULE_7.fxtest;
+//package MODULE_7.ColorfulCircles;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;

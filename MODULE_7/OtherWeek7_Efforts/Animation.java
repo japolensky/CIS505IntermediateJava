@@ -1,4 +1,4 @@
-package MODULE_7.OtherWeek7_Efforts;
+//package MODULE_7.OtherWeek7_Efforts;
 // https://genuinecoder.com/javafx-animation-tutorial/#pathtransition
 
 import javafx.animation.PathTransition;

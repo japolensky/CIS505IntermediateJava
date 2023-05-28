@@ -6,6 +6,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ColorfulCircles",
+            "request": "launch",
+            "mainClass": "ColorfulCircles",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Animation",
+            "request": "launch",
+            "mainClass": "Animation",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
+            "name": "Dashboard",
+            "request": "launch",
+            "mainClass": "Dashboard",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.7/lib\" --add-modules javafx.controls, javafx.fxml",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "Dashboard",
             "request": "launch",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.7/lib\" --add-modules javafx.controls, javafx.fxml",
