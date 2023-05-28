@@ -26,7 +26,8 @@
     ],
     "maven.view": "hierarchical",
     "java.project.sourcePaths": [
+        "MODULE_7/fxtest",
         "MODULE_7/OtherWeek7_Efforts",
-        "MODULE_7/fxtest"
+        "MODULE_7/ColorfulCircles"
     ]
 }
