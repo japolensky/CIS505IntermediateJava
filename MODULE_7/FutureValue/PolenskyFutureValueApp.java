@@ -1,7 +1,7 @@
 /*
  * Assignment 7.2 - CIS 505 - Jason Polensky 29May2023
  * 
- *  Future Value Calculation Applications
+ *  Future Value Calculation Application
  */
 /*
  *   Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
