@@ -1,5 +1,5 @@
 /*
- * Assignment 7.2 - CIS 505 - Jason Polensky 29May2023
+ * Assignment 8.2 - CIS 505 - Jason Polensky 29May2023
  * 
  *  Future Value Calculation Application
  */

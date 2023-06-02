@@ -20,7 +20,8 @@
     "java.project.sourcePaths": [
         "MODULE_7/fxtest",
         "MODULE_7/OtherWeek7_Efforts",
+        "MODULE_7/FutureValue",
         "MODULE_7/ColorfulCircles",
-        "MODULE_7/FutureValue"
+        "MODULE_8/FutureValue"
     ]
 }
