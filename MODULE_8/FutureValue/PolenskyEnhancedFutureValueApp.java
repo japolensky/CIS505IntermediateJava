@@ -99,6 +99,7 @@ primaryStage.show();
  // 2. YourLastNameEnhancedFutureValueApp.java
 //    Additional Java Programming Requirements
 //   a. Create a private method named clearFormFields() with a return type of void. Set the txtMonthlyPayment, txtInterestRate, txtResults, and lblFutureValueDate text values to an empty string. Set the cbYears value to 0.
+
 //   b. Create a private method named calculateResults that collects the users entered values and calls the calculateFutureValue method from the FinanceCalculator class. Set the lblFutureValueDate text to the string value “Calculation as of <today’s date>” and set the txtResults TextArea to the string value “The future value is <futureValue>”
 //    Exhibit C EnhancedFutureValueApp results
 
