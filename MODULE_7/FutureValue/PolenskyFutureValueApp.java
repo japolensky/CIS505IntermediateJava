@@ -32,7 +32,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 // 4. Extend the JavaFX Application object and setup the @Override start method with a single argument for the Stage object.
-public class PolenskyFutureValueApp extends Application{
+public class PolenskyFutureValueApp extends Application {
     public static void main(String[] args) {
         Application.launch(args);
     }

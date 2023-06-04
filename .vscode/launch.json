@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PolenskyGradeBookApp",
+            "request": "launch",
+            "mainClass": "PolenskyGradeBookApp",
+            "projectName": "CIS505IntermediateJava_ecb6a142"
+        },
+        {
+            "type": "java",
             "name": "PolenskyEnhancedFutureValueApp",
             "request": "launch",
             "mainClass": "PolenskyEnhancedFutureValueApp",
