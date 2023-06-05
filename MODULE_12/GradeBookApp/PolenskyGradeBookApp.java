@@ -1,5 +1,5 @@
 /*
- * Assignment 10.2 - CIS 505 - Jason Polensky 29May2023
+ * Assignment 12.2 - CIS 505 - Jason Polensky 29May2023
  * 
  *  Student Gradebook App Demo For EdX
  */
@@ -38,6 +38,14 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.util.ArrayList;
+
+
+
 //import java.util.Date;
 //import java.text.SimpleDateFormat;
 //import java.util.stream.*;
@@ -60,6 +68,8 @@ private Label lblGrade = new Label("Grade:");
 private Label lblStudents = new Label("Students");
 
 
+
+private ArrayList<Student> students;
 private Button btnClear = new Button("Clear");
 private Button btnView = new Button("View");
 private Button btnSave = new Button("Save");
@@ -88,8 +98,6 @@ public void start(Stage primaryStage){
     //row 4
     HBox actionBtnContainer = new HBox(); // Create a new HBox container.
     
-    btnClear.setOnAction(e -> clearFormFields());
-    // btnCalculate.setOnAction(e -> calculateResults());
     actionBtnContainer.setPadding(new Insets(15,0,15,30)); // Set the containers padding.
     actionBtnContainer.setSpacing(10); // Set the containers spacing.
     actionBtnContainer.getChildren().add(btnClear); // Add the btnClear to the container.
@@ -101,19 +109,54 @@ public void start(Stage primaryStage){
     //row 6
     pane.add(txtResult, 0, 6, 2, 1);
     //    f. Set the primary stages title to “YourLastName Future Value App.”
-Scene scene = new Scene(pane);
-primaryStage.setTitle("Polensky Gradebook App");
-primaryStage.setScene(scene);
-primaryStage.show();
-
-    }
+    Scene scene = new Scene(pane);
+    primaryStage.setTitle("Polensky Gradebook App");
+    primaryStage.setScene(scene);
+    primaryStage.show();
+    
+    btnClear.setOnAction(e -> clearFormFields());
+    btnSave.setOnAction( e -> saveStudent());
+    btnView.setOnAction( e->  view());
+}
 
     private void clearFormFields() {
-        txtFirstName.setText("");
-        txtLastName.setText("");
+    txtFirstName.setText("");
+    txtLastName.setText("");
         txtCourse.setText("");
         txtGrade.setText("");
     }
- 
 
+    private void saveStudent(){
+        System.out.println("entered saveStudent()");
+        String grade = cboGrades.getSelectionModel().getSelectedItem();
+        Student student = new Student(txtFirstName.toString(), txtLastName.toString(), txtCourse.toString(), cboGrades.getSelectionModel().getSelectedItem().toString());
+        students.add(student); // put each student into the in-memory list when save is pressed
+        //write the student to the file
+        // 9.  On form submission, write the entered values to a csv file named grades.csv.  
+//     The grades.csv file should have a header row with values for “firstName, lastName, course, and grade.”
+        String header = ("firstName, "+ "lastName, "+ "course, "+ "grade");
+        String content = (txtFirstName + ", " + txtLastName + ", " + txtCourse + ", " + grade + "\n");
+        File file = new File("grades.csv");
+        System.out.println("The file name grades.csv is created:"+header+" "+content);
+        System.out.println(file.getAbsolutePath());
+        System.out.println(file.getName());
+        if  (file.length()==0){  //if the file is empty, put in the header first
+            try {BufferedWriter writer = new BufferedWriter(new FileWriter("grades.csv", true));
+            writer.write(header);
+            writer.close();}
+            catch (IOException e) {System.out.println("File Error Occurred: "+e.getMessage());}
+            }
+        if (file.length()>0){  // if the file has length, append the student data to it.
+            try {BufferedWriter writer = new BufferedWriter(new FileWriter("grades.csv", true));
+            writer.write(content);
+            writer.close();}
+            catch (IOException e) {System.out.println("File Error Occurred: "+e.getMessage());}
+            }    
+            clearFormFields(); // clear the form after press
+
+    }
+        // 10. When a user selects the “view grades’ button, display the contents of the grades.csv file.
+    public void view(){
+        System.out.println("View Student activated");
+    }
 }  // End PolenskyGradebookApp class

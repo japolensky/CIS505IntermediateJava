@@ -40,9 +40,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.util.stream.*;
 public class PolenskyGradeBookApp extends Application {
     public static void main(String[] args) {
         Application.launch(args);
